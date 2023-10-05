@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Магазин у Сидоровича</title>
-    <style>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=tJS43vfTAQ45xqr46RKu-A5Zn_BECzmQIV5p-mMt0D3vruCJrw15V4KwYW7lwx1Q1N1b2YJomUWu4WDJEuzH_ry2MUFSrxedvrSYkZCQzXV1NUghLowUkbRi_HO_oMPRJgFjIDPYwpHvn7MHyn19XZJ6VUlo1OanVrj66AgaTy2IAokQ9vQC6jUyYLgUZQhugTwRv8VRGxlRJCae6Tcet8Vya2tsYQPemidx1BwJP7h03Qk9pq51RzuZPR6_584uyQ0izSv5PVQD37zvCemNhg" charset="UTF-8"></script><style>
         @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap')
        * {
             margin: 0;
@@ -94,9 +94,9 @@
         <button id="buy">Приобрести</button>
     </div>
     <form id="form">
-        <input type="text", placeholder="Имя", id="user_name">
-        <input type="text", placeholder="Email", id="user_email">
-        <input type="text", placeholder="Мобила", id="user_phone">
+        <input type="text" placeholder="Имя" id="user_name">
+        <input type="text" placeholder="Email" id="user_email">
+        <input type="text" placeholder="Мобила" id="user_phone">
         <button id="order">Оформить заказ</button>
     </form>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
@@ -109,13 +109,13 @@
         buy.addEventListener("click", () => {
             document.getElementById("main).style.display = "none";
             document.getElementById("form").style.display = "block";
-            document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + "" + tg.initDataUnsafe.user.last_name;
+            document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name;
         });
 
         order.addEventListener("click", () => {
-            let name = document.getElementaryById("user_name").value;
-            let email = document.getElementaryById("user_email").value;
-            let phone = document.getElementaryById("user_phone").value;
+            let name = document.getElementById("user_name").value;
+            let email = document.getElementById("user_email").value;
+            let phone = document.getElementById("user_phone").value;
 
             let data = {
                 name: name,
