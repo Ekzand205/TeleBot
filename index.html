@@ -58,7 +58,7 @@
 
          }
 
-         button: hover {
+         button:hover {
              background: var(--tg-theme-secondary-bg-color);
          }
 
@@ -89,7 +89,7 @@
 <body>
     <div id="main">
         <h1>Онлайн магаз 'Сидорович'</h1>
-        <img src="Сидорович.png", alt="Картинки нет">
+        <img src="Сидорович.png" alt="Картинки нет">
         <p>Здесь онлайн-магазин от Сидоровича</p>
         <button id="buy">Приобрести</button>
     </div>
@@ -107,7 +107,7 @@
         tg.expand();
 
         buy.addEventListener("click", () => {
-            document.getElementById("main).style.display = "none";
+            document.getElementById("main").style.display = "none";
             document.getElementById("form").style.display = "block";
             document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name;
         });
